@@ -7,7 +7,7 @@
 	function LunchCheckController($scope){
 		$scope.lunch="";
 		
-		$scope.checkNow=function(){
+		$scope.checkLunch=function(){
 			var str=$scope.lunch;
 			var arr=str.split(",");
 			if($scope.lunch.trim().length === 0){
