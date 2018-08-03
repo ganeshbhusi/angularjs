@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name calc</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="NameCalc.js"></script>
+</head>
+<body ng-app="nameCalc">
+<div ng-controller="nameCalcCtrl">
+	Yourname: <input type="text" name="name" ng-model="name" ng-keyup="displayValue()">
+	<div>Value of '{{name}}' is: {{total}}</div>
+</div>
+</body>
+</html>

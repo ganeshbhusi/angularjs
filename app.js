@@ -1,25 +1,10 @@
-var student = {
-	name:"",
-	type:"student"
-};
-document.addEventListener('DOMContentLoaded',contentLoaded);
-
-function contentLoaded(event){
-	document.getElementById('name').addEventListener("keyup",keyUp);
-}
-function keyUp(event){
-	calculateNumericOutput();
-}
-
-function calculateNumericOutput(){
-	student.name=document.getElementById('name').value;
-	
-	var totalNameValue=0;
-	
-	for(var i=0;i<student.name.length;i++){
-		totalNameValue += student.name.charCodeAt(i);
-	}
-
-	var output = "Total numeric value of person is "+ totalNameValue;
-	document.getElementById('output').innerText=output;
-}
+(function(){
+	'use strict';
+	angular.module("MyFirstApp",[])
+	.controller("MyFirstContoller",function($scope){
+		$scope.name="Ganesh Paul";
+		$scope.myFunc=function(){
+			return "This course is AngularJS";
+		}
+	});
+})();
