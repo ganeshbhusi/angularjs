@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="MsgApp">
+<head>
+	<title>Expression - Interpolation</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="Exp_Interpolation.js"></script>
+</head>
+<body>
+<div ng-controller="MsgController">
+	<button ng-click="changeImage()">Change Image</button><br/>
+	<img ng-src="images/1_{{img_name}}.jpeg" style="width: 200px;height: 250px;">
+</div>
+</body>
+</html>
